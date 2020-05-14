@@ -8,8 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Sensive Blog - Home</title>
-  <link rel="icon" href={% static "img/favicon.png"%} type="image.png">
-  <link rel="stylesheet" href={% static "styles.min.css" %}>
+  <link rel="icon" href='{% static "img/favicon.png"%}' type="image.png">
+  <link rel="stylesheet" href='{% static "styles.min.css" %}'>
 </head>
 <body>
   {% block content %}
@@ -39,7 +39,7 @@
                   {% if post.image_url %}
                     <img class="card-img rounded-0" src="{{post.image_url}}" alt="">
                   {% else %}
-                    <img class="img-fluid" src={% static "img/banner/blog.png" %} alt="">
+                    <img class="img-fluid" src='{% static "img/banner/blog.png" %}' alt="">
                   {% endif %}
                 </div>
                 <div class="blog__slide__content">
@@ -65,7 +65,7 @@
                   {% if post.image_url %}
                     <img class="img-fluid" src="{{post.image_url}}" alt="">
                   {% else %}
-                    <img class="img-fluid" src={% static "img/banner/blog.png" %} alt="">
+                    <img class="img-fluid" src='{% static "img/banner/blog.png" %}' alt="">
                   {% endif %}
                   <ul class="thumb-info" style="max-width: 550px">
                     <li><a href="{% url 'post_detail' slug=post.slug %}"><i class="ti-user"></i>{{post.author}}</a></li>
