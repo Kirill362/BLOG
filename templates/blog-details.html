@@ -7,7 +7,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="icon" href='{% static "img/favicon.png"%}' type="image/png">
+	<link rel="icon" href="{% static 'img/favicon.png'%}" type="image/png">
   <link rel="stylesheet" href="{% static 'styles.min.css' %}">
 </head>
 <body>
@@ -42,7 +42,7 @@
                 {% if post.image_url %}
                   <img class="img-fluid" src="{{post.image_url}}" alt="{{post.title}}">
                 {% else %}
-                  <img class="img-fluid" src='{% static "img/banner/blog.png" %}' alt="Plug">
+                  <img class="img-fluid" src="{% static 'img/banner/blog.png' %}" alt="Plug">
                 {% endif %}
                 <a href="#"><h4>{{post.title}}</h4></a>
                 <div class="user_details">
